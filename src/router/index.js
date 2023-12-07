@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Auth from '@/components/pages/Auth'
+import WavHome from '@/components/pages/WavHome'
+//import HedgeHogs from '@/components/pages/HedgeHogs'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/home',
+    name: 'WavHome',
+    component: WavHome
   },
+  {
+    path: '/auth',
+    name: 'Auth',
+    component: Auth
+  },
+
   {
     path: '/about',
     name: 'about',
